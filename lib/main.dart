@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_b11/asset_image_demo.dart';
+import 'package:flutter_b11/list_tile_view.dart';
 import 'package:flutter_b11/login_view.dart';
 
 void main() {
@@ -11,8 +12,8 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: LoginView(),
+    return const MaterialApp(
+      home: ListTileView(),
     );
   }
 }
