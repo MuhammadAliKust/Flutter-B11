@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_b11/asset_image_demo.dart';
+import 'package:flutter_b11/bottom_bar_view.dart';
 import 'package:flutter_b11/dynamic_list_view.dart';
 import 'package:flutter_b11/list_tile_view.dart';
 import 'package:flutter_b11/login_view.dart';
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  MaterialApp(
-      home: OnboardingView(),
+      home: BottomBarView(),
     );
   }
 }
