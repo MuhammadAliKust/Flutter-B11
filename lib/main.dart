@@ -7,6 +7,7 @@ import 'package:flutter_b11/login_view.dart';
 import 'package:flutter_b11/multiple_selection_view.dart';
 import 'package:flutter_b11/onboarding.dart';
 import 'package:flutter_b11/single_selection_view.dart';
+import 'package:flutter_b11/tabbar_view.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,8 +18,8 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  MaterialApp(
-      home: BottomBarView(),
+    return MaterialApp(
+      home: TabbarViewDemo(),
     );
   }
 }
