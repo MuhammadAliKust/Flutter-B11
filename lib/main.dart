@@ -9,12 +9,16 @@ import 'package:flutter_b11/list_tile_view.dart';
 import 'package:flutter_b11/login_view.dart';
 import 'package:flutter_b11/multiple_selection_view.dart';
 import 'package:flutter_b11/onboarding.dart';
+import 'package:flutter_b11/provider/user_provider.dart';
 import 'package:flutter_b11/screen_a.dart';
 import 'package:flutter_b11/single_selection_view.dart';
 import 'package:flutter_b11/tabbar_view.dart';
+import 'package:provider/provider.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MultiProvider(
+      providers: [ChangeNotifierProvider(create: (context) => UserProvider())],
+      child: const MyApp()));
 }
 
 class MyApp extends StatelessWidget {

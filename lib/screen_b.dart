@@ -1,15 +1,13 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_b11/provider/user_provider.dart';
+import 'package:provider/provider.dart';
 
 class ScreenBView extends StatelessWidget {
-  final String name;
-  final String email;
-
-  const ScreenBView({super.key, required this.name, required this.email});
-
   @override
   Widget build(BuildContext context) {
+    var userProvider = Provider.of<UserProvider>(context);
     return WillPopScope(
       onWillPop: () {
         // showDialog(
@@ -45,10 +43,7 @@ class ScreenBView extends StatelessWidget {
           child: Column(
             children: [
               Text(
-                name,
-                style: TextStyle(fontSize: 30),
-              ), Text(
-                email,
+                userProvider.getName,
                 style: TextStyle(fontSize: 30),
               ),
             ],
